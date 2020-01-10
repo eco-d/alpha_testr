@@ -41,6 +41,8 @@ function initializeSession() {
       session.publish(publisher, handleError);
     }
   });
+  //changeView();
+
 }
 
 function changeView(){
@@ -50,8 +52,9 @@ function changeView(){
     height: '100%'
   }, handleError);
 
-  publisher.cycleVideo();
+  publisher.cycleVideo().then(console.log);
+
 }
 
 
-$('#tester').on('click', changeView());
+$('#tester').on('click', changeView);
