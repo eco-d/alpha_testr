@@ -41,7 +41,17 @@ function initializeSession() {
       session.publish(publisher, handleError);
     }
   });
+}
+
+function changeView(){
+  var publisher = OT.initPublisher('publisher', {
+    insertMode: 'append',
+    width: '100%',
+    height: '100%'
+  }, handleError);
 
   publisher.cycleVideo();
-
 }
+
+
+$('#tester').on('click', changeView());
