@@ -30,3 +30,24 @@ body, html {
     border: 3px solid white;
     border-radius: 3px;
 }
+
+.buttn {
+  width: 100px;
+  height: 30px;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  color: red;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.buttn:hover {
+  width: 100px;
+  height: 30px;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 3px;
+}

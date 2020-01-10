@@ -41,4 +41,7 @@ function initializeSession() {
       session.publish(publisher, handleError);
     }
   });
+
+  publisher.cycleVideo();
+
 }
